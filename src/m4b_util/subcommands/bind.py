@@ -59,7 +59,7 @@ def run():
         return 0
 
     # Add the files to the binder
-    book.add_chapters_from_directory(args.input_folder)
+    book.add_chapters_from_directory(args.input_folder, use_filenames=args.use_filename)
 
     # Run the binder
     output_path = Path()
